@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>MadPunks | Stay Hungry, Stay MadPunk.</title>
+    
     <meta name="description" content="MadPunks（マッドパンクス）は、古い価値観を壊し、今日を真剣に生きるための新たな経済圏と文化圏です。運営：株式会社asfact">
-    <meta name="keywords" content="MadPunks,asfact,デジタル基盤,フェス,飲食,宿泊,コミュニティ,SaaS,ロボット">
-    <meta name="google-site-verification" content="lmMGrfe4BrEapzBM5dUtA3j5E7dW8s0WcFEl1P_JWkw" />
+    <meta name="keywords" content="MadPunks,asfact,デジタル基盤,フェス,飲食,宿泊,コミュニティ,SaaS,ロボット,granum">
+    
     <meta property="og:title" content="MadPunks">
     <meta property="og:type" content="website">
     <meta property="og:description" content="壊すべき(Punk)は自分たちの古い価値観。今日を真剣にMadに生きる。">
@@ -116,7 +118,7 @@
             color: #ccc;
         }
 
-        /* Logo Styles */
+        /* Logo Styles (Animation Added) */
         .logo-container {
             display: block;
             margin-bottom: 20px;
@@ -124,10 +126,48 @@
         }
         .logo-img {
             max-width: 100%;
-            width: 300px; /* お好みで調整 */
+            width: 300px; 
             height: auto;
             margin: 0 auto; 
+            /* アニメーション適用: 4秒サイクルでゆっくり鼓動 */
+            animation: fetal-beat 6s ease-in-out infinite;
+            will-change: transform;
         }
+
+/* ▼▼▼ 修正版：胎動（鼓動）のアニメーション定義 ▼▼▼ */
+        @keyframes fetal-beat {
+            /* 開始：少し縮こまって、薄くなる（溜め） */
+            0% { 
+                transform: scale(0.94);
+                opacity: 0.6;
+            }
+            /* ドクン（小ビート）：少し拡大して、くっきり表示 */
+            15% { 
+                transform: scale(1.08);
+                opacity: 1;
+            }
+            /* 収縮：また縮こまって、薄くなる（消え入りそうに） */
+            30% { 
+                transform: scale(0.94);
+                opacity: 0.6;
+            }
+            /* ドクンッ！（大ビート）：大きく拡大して、強く主張 */
+            45% { 
+                transform: scale(1.2); /* 大小差を強調 */
+                opacity: 1;
+            }
+            /* 長い静寂へ向かう深い収縮 */
+            70% { 
+                transform: scale(0.96);
+                opacity: 0.5; /* 最も薄くなる */
+            }
+            /* 落ち着いた状態を維持（次のループへ） */
+            100% { 
+                transform: scale(0.96);
+                opacity: 0.6;
+            }
+        }
+        /* ▲▲▲ 修正ここまで ▲▲▲ */
 
         /* Footer */
         footer {
@@ -169,10 +209,15 @@
         "name": "株式会社asfact",
         "url": "https://asfact.jp"
       },
+      "sameAs": [
+        "https://granum.online",
+        "https://granum.blog"
+      ],
       "description": "Stay Hungry, Stay MadPunk. 運営：株式会社asfact"
     }
     </script>
-</head>
+    
+    </head>
 <body>
 
     <header class="container" style="padding-top: 100px; padding-bottom: 80px;">
@@ -180,7 +225,7 @@
         <div class="logo-container">
             <picture>
                 <source srcset="logo_by_gemini.webp" type="image/webp">
-                <img src="logo_by_gemini.jpg" alt="MadPunks Official Logo (Created with Gemini)" class="logo-img">
+                <img src="logo_by_gemini.jpg" alt="MadPunks Official Logo" class="logo-img">
             </picture>
         </div>
 
@@ -206,10 +251,31 @@
                     <span class="highlight">今日という二度と来ない瞬間を、誰よりも真剣に生きる熱狂のことだ。</span>
                 </p>
                 <p style="margin-top: 30px; font-weight: normal; font-size: 1rem; color: #ccc;">
-                    工場で作られたような「正解」に抗い、生まれてきた「歪み（Distortion）」を楽しもう。<br>
+                    工場で作られたような「正解」に抗い、生まれてきた「歪み（Distortion）」を愛そう。<br>
                     不揃いな形も、はみ出した個性も、全てが愛すべき「Soul（魂）」なのだから。
                 </p>
+                <p style="margin-top: 20px; text-align: right; font-size: 0.9rem;">
+                    Philosophy Source: <a href="https://granum.blog" target="_blank">granum.blog</a>
+                </p>
             </div>
+        </section>
+
+        <section>
+            <h2>News & Updates</h2>
+            <dl style="list-style: none; padding: 0;">
+                <div style="margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                    <dt style="font-size: 0.8rem; color: #888;">2025.12.30</dt>
+                    <dd style="margin: 0; font-weight: bold;">MadPunks公式サイトを公開。ブランド定義を制定。</dd>
+                </div>
+                <div style="margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                    <dt style="font-size: 0.8rem; color: #888;">2025.12.25</dt>
+                    <dd style="margin: 0;">Webアプリケーション「<a href="https://granum.online" target="_blank" style="color: #fff; text-decoration: underline;">granum.online</a>」とのシステム統合・シナジー開発を開始。</dd>
+                </div>
+                <div style="margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                    <dt style="font-size: 0.8rem; color: #888;">2025.12.01</dt>
+                    <dd style="margin: 0;">思想発信拠点「<a href="https://granum.blog" target="_blank" style="color: #fff; text-decoration: underline;">granum.blog</a>」の理念をMadPunksへ継承。</dd>
+                </div>
+            </dl>
         </section>
 
         <section>
@@ -217,26 +283,26 @@
             <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 30px;">
                 MadPunksは、以下の事業領域を通じて「歪み」を価値に変えるプラットフォームを構築します。
             </p>
-            
             <div class="service-list">
                 <div class="service-item">
                     <span class="service-cat">DIGITAL & TECH</span>
                     <h3>Platform System</h3>
                     <p>ブランドとコミュニティを守るためのデジタル基盤開発。アプリケーション提供、SaaS型運営支援システムの構築。</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">
+                        <span style="color: #888;">Powered by:</span><br>
+                        <a href="https://granum.online" target="_blank" style="font-weight: bold;">>> granum.online (Web App)</a>
+                    </p>
                 </div>
-
                 <div class="service-item">
                     <span class="service-cat">CULTURE & EXPERIENCE</span>
                     <h3>MadPunk Fes</h3>
                     <p>循環型フェスの企画・運営。音楽、映像、アートを通じた表現の場の創出と、オンライン配信。</p>
                 </div>
-
                 <div class="service-item">
                     <span class="service-cat">LIFESTYLE BASE</span>
                     <h3>Facility: The BASE</h3>
                     <p>「暮らすように遊び、生きるように働く」拠点の展開。飲食提供（Soul Soup）、宿泊施設、コワーキングスペースの運営。</p>
                 </div>
-
                 <div class="service-item">
                     <span class="service-cat">ECONOMY & FOUNDATION</span>
                     <h3>Supply & Support</h3>
@@ -247,22 +313,18 @@
 
         <section>
             <h2>2. Future Vision</h2>
-            
             <div class="roadmap-item">
                 <div class="phase-title">Phase 0: GENESIS</div>
                 <p>菜園（Saien）の開拓とプロトタイプ開発。私たちの原点となる「Madな価値」を自らの手で育てる。</p>
             </div>
-
             <div class="roadmap-item">
                 <div class="phase-title">Phase 1: EXPANSION</div>
                 <p>リアルな拠点の建設とコミュニティの醸成。直売・食堂・宿が混ざり合う「居場所」を各地へ。</p>
             </div>
-
             <div class="roadmap-item">
                 <div class="phase-title">Phase 2: ESTABLISHMENT</div>
                 <p>経済圏の確立と循環システムの完成。利益を文化や土壌へ還元し、永続的な運営基盤を固める。</p>
             </div>
-
             <div class="roadmap-item">
                 <div class="phase-title">Phase 3: REVOLUTION</div>
                 <p>「ビジネス」を「生活」へ。「消費者」を「仲間（Punks）」へ。地域と世界を繋ぐ文化圏の創造。</p>
@@ -285,7 +347,6 @@
                 <span style="color: #333;">/</span>
                 <a href="https://asfact.jp/" target="_blank">Op. by Asfact Inc.</a>
             </div>
-            
             <p class="copyright">
                 &copy; MadPunks. All Rights Reserved.
             </p>
@@ -293,6 +354,4 @@
     </footer>
 
 </body>
-
 </html>
-
