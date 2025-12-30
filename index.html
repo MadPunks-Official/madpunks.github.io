@@ -116,6 +116,19 @@
             color: #ccc;
         }
 
+        /* Logo Styles */
+        .logo-container {
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo-img {
+            max-width: 100%;
+            width: 300px; /* お好みで調整 */
+            height: auto;
+            margin: 0 auto; 
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid #111;
@@ -142,11 +155,37 @@
             text-align: center;
         }
     </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MadPunks",
+      "url": "https://madpunks.com",
+      "logo": "https://madpunks.com/logo_by_gemini.jpg", 
+      "foundingDate": "2025",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "株式会社asfact",
+        "url": "https://asfact.jp"
+      },
+      "description": "Stay Hungry, Stay MadPunk. 運営：株式会社asfact"
+    }
+    </script>
 </head>
 <body>
 
-    <header class="container" style="padding-top: 120px; padding-bottom: 80px;">
-        <h1>MadPunks.</h1>
+    <header class="container" style="padding-top: 100px; padding-bottom: 80px;">
+        
+        <div class="logo-container">
+            <picture>
+                <source srcset="logo_by_gemini.webp" type="image/webp">
+                <img src="logo_by_gemini.jpg" alt="MadPunks Official Logo (Created with Gemini)" class="logo-img">
+            </picture>
+        </div>
+
+        <h1 style="font-size: 1px; opacity: 0; overflow: hidden; margin: 0;">MadPunks.</h1>
+        
         <p class="subtitle">Stay Hungry, Stay MadPunk.</p>
         <div class="hero-message">
             壊すべき(Punk)は自分たちの古い価値観。今日を真剣にMadに生きる。
@@ -240,6 +279,8 @@
     <footer>
         <div class="container">
             <div class="links">
+                <a href="mailto:stay@madpunks.com">stay@madpunks.com</a>
+                <span style="color: #333;">/</span>
                 <a href="https://asfact.jp/privacy-policy/" target="_blank">Privacy Policy</a>
                 <span style="color: #333;">/</span>
                 <a href="https://asfact.jp/" target="_blank">Op. by Asfact Inc.</a>
