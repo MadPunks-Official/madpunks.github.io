@@ -139,6 +139,37 @@
             will-change: transform;
         }
 
+/* ▼▼▼ Talking Icon Animation (喋るアイコン) ▼▼▼ */
+        .talking-icon-container {
+            margin-bottom: 15px; /* キャッチコピーとの間隔 */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100px; /* アイコンの可動域確保 */
+        }
+        .talking-icon {
+            width: 80px; /* アイコンサイズ */
+            height: auto;
+            /* 喋っているような高速な伸縮アニメーション */
+            animation: talking-beat 0.3s infinite alternate;
+            will-change: transform;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+        }
+
+        @keyframes talking-beat {
+            0% {
+                transform: scaleY(1) rotate(0deg);
+            }
+            50% {
+                /* 縦に少し潰れる＝口をパクパクさせているような動き */
+                transform: scaleY(0.85) rotate(-2deg);
+            }
+            100% {
+                transform: scaleY(1.05) rotate(2deg);
+            }
+        }
+        /* ▲▲▲ 喋るアイコン設定ここまで ▲▲▲ */
+
 /* ▼▼▼ 修正版：胎動（鼓動）のアニメーション定義 ▼▼▼ */
         @keyframes fetal-beat {
             /* 開始：少し縮こまって、薄くなる（溜め） */
@@ -182,6 +213,14 @@
             font-size: 0.7rem;
             background-color: #050505;
             color: #555;
+        }
+		.footer-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 40px;
+            letter-spacing: 0.1em;
+            display: inline-block;
         }
         .links {
             margin-bottom: 20px;
@@ -326,10 +365,15 @@
             <p class="subtitle">壊すべき(Punk)は自分たちの古い価値観。今日を真剣にMadに生きる。</p>
         </section>
 
+
     </main>
 
     <footer>
         <div class="container">
+			<div class="talking-icon-container">
+                <img src="icon.svg" alt="Mad Icon" class="talking-icon">
+            </div>
+	        <div class="footer-brand">MadPunks</div>
             <div class="links">
                 <a href="mailto:stay@madpunks.com">stay@madpunks.com</a>
                 <span style="color: #333;">/</span>
