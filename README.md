@@ -2,7 +2,7 @@
 
 ![MadPunks Logo](./logo_by_gemini.jpg)
 
-> **Stay Hungry, Stay MadPunk.**
+> **Stay Hungry, Stay Mad & Punk.**
 > 
 > 壊すべき(Punk)は自分たちの古い価値観。今日を真剣にMadに生きる。
 
